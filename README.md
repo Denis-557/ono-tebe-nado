@@ -1,3 +1,1 @@
-C:\Users\zaits\ono-tebe-nado 
-
-file:///C:/Users/zaits/ono-tebe-nado/index.html
+https://github.com/Denis-557/ono-tebe-nado/tree/main .
