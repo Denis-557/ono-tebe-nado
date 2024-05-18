@@ -1,22 +1,22 @@
 /* место для вашего кода */
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
-  width: 1340px;
-  height: 109px;
+
+  width: 1100px;
   margin: 92px auto 92px auto;
 }
 
 .header-menu {
-  width: 388px;
-  height: 23px;
+  margin: 44px auto auto 26.52px;
 }
 
 .header-menu-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 43px;
+  gap: 34.02px;
   border: 1px;
 }
 
@@ -36,9 +36,8 @@
 }
 
 .header-logo {
-  position: absolute;
-  margin-left: 597px;
-  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 0px;
   padding-bottom: 4px;
 }
@@ -51,11 +50,11 @@
 .address {
   display: flex;
   flex-direction: column;
-  width: 240px;
-  height: 97px;
+  max-width: 240.52px;
   border: 1px;
-  padding-top: 4px;
-  padding-bottom: 7px;
+  padding-top: 5px;
+  padding-right: 25.48px;
+
   color: #000;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -65,35 +64,38 @@
 }
 
 .main {
-  width: 1440px;
+  width: 1100px;
   margin: 0 auto;
 }
 
 /**************************************/
 
 .cover {
-  height: 757px;
-  width: 1440px;
+  background-image: url(C:/Users/zaits/ono-tebe-nado/images/cover.jpg);
+  width: 1100px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 165px auto 237px auto; /*50*/
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cover__title {
-  position: absolute;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 2;
-  width: 1340px;
-  height: 355px;
-  padding: 165px 50px 237px 50px;
+  z-index: 100;
+  width: 1100px;
   gap: 20px;
 }
 
 .aligned-text {
   text-align: left;
   line-height: 115%;
-  width: 1340;
+  padding-top: 165px;
+  padding-left: 50px;
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 100px;
@@ -109,7 +111,7 @@
 .aligned-text-center {
   text-align: center;
   line-height: 100%;
-  width: 1280px;
+
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 100px;
@@ -121,7 +123,8 @@
 .aligned-text-right {
   text-align: right;
   line-height: 100%;
-  width: 1340px;
+
+  padding-right: 50px;
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 100px;
@@ -139,6 +142,8 @@
 }
 
 .cover__description {
+  display: flex;
+  justify-content: space-around;
   color: #fff;
   text-align: center;
   font-family: "Raleway", "Arial", sans-serif;
@@ -146,33 +151,33 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+
+  padding-top: 135px;
+  padding-bottom: 50px;
+  padding-left: 28px;
 }
 
 .cover__description-text {
   display: flex;
   justify-content: center;
-  position: absolute;
+  align-items: center;
   z-index: 2;
   margin: 0;
-  width: 633px;
-  height: 28px;
+
   line-height: 28px;
   word-spacing: 15px;
-  margin: 667px 385px 62px 422px;
 }
 
 .bet-button {
   display: flex;
   justify-content: right;
   background-color: transparent;
-  position: absolute;
   z-index: 2;
   width: 257px;
   height: 52px;
   border: 1px solid #fff;
   padding: 12px 32px;
   line-height: normal;
-  margin: 655px 50px 50px 1133px;
 }
 
 .overlay {
@@ -188,29 +193,19 @@
   background-repeat: no-repeat;
 }
 
-.cover_background {
-  position: relative;
-  margin: 0;
-  padding-top: 1px;
-  padding-bottom: 5.94px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*********************************************/
 
 .lost {
   display: inline-block;
-  width: 1340px;
-  height: 579px;
-  margin: 180px 50px 0px 50px;
+  width: 1100px;
+  margin-top: 180px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .lots__heading {
   margin-left: 40px;
   margin-bottom: 27px;
-  width: 121px;
-  height: 47px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -223,35 +218,45 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+
+  align-items: stretch;
+  position: relative;
 }
 
 .lots__card-list-item {
-  min-width: 430px;
-  height: 100%;
+  max-width: 334px;
+
+  align-self: stretch;
+  background: #eee;
 }
 
 .card-link {
   display: block;
   text-decoration: none;
   list-style: none;
+  height: 100%;
 }
 
 .card {
   position: relative;
   display: flex;
-  width: 430px;
-  height: 450px;
+  flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
+
+  max-width: 334px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .card__title {
-  position: absolute;
   z-index: 2;
-  margin-top: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 350px;
+  padding: 51px 40px 0px 40px;
+  max-width: 334px;
+  width: 100%;
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 22px;
@@ -263,15 +268,13 @@
 }
 
 .card__text {
-  position: absolute;
   bottom: 50px;
   left: 0;
   right: 0;
   display: block;
-  margin: 0 40px;
+  padding: 0px 40px 48px 40px;
   z-index: 2;
   color: #fff;
-  width: 350px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -280,24 +283,15 @@
 }
 
 .card-type-film {
-  position: relative;
-  margin: 0;
-  width: 430px;
-  height: 100%;
+  background-image: url(C:/Users/zaits/ono-tebe-nado/images/card-lot-01.jpg);
 }
 
 .card-type-book {
-  position: relative;
-  margin: 0;
-  width: 430px;
-  height: 100%;
+  background-image: url(C:/Users/zaits/ono-tebe-nado/images/card-lot-02.jpg);
 }
 
 .card-type-picture {
-  position: relative;
-  margin: 0;
-  width: 430px;
-  height: 100%;
+  background-image: url(C:/Users/zaits/ono-tebe-nado/images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -319,35 +313,39 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 1340px;
-  height: 487px;
-  margin: 181px 50px auto 50px;
+  width: 1100px;
+  margin-left: 24px;
+  margin-top: 181px;
+  margin-right: 24px;
 }
 
 .about__logo {
   width: 430px;
   height: 240px;
+  margin-top: 35px;
+  margin-left: 47px;
 }
 
 .fon-logo {
   background-color: #000;
   border-radius: 120px;
-  margin: 0px 95px;
+  padding-left: 46.48px;
   width: 240px;
   height: 240px;
 }
 
 .about__logo-image {
-  margin: 63px 46px;
+  margin-top: 64px;
+
   width: 148px;
   height: 114px;
   fill: #000;
 }
 
 .about__column {
-  width: 885px;
-  height: 387px;
-  margin: 100px 0px 0px 0px;
+  max-width: 693px;
+  width: 100%;
+  padding-top: 133px;
 }
 
 .about__title {
@@ -362,7 +360,13 @@
 }
 
 .about__text {
-  width: 885px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 688px;
+  margin-bottom: 2px;
+  width: 100%;
+
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -370,27 +374,25 @@
   line-height: normal;
 }
 
-.indentation {
-  margin-bottom: 25px;
-}
-
 /******************************************/
 
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 1340px;
-  height: 97px;
+  width: 1100px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 180px auto 90px auto;
 }
 
 .footer__menu {
-  width: 149px;
-  height: 64px;
+  display: block;
+  padding-left: 70px;
   border: 1px;
 }
 
 .footer__menu-list-item {
+  display: block;
   text-align: center;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -406,14 +408,13 @@
 
 .footer__social {
   border: 1px;
-  width: 240px;
-  height: 48px;
 }
 
 .footer__social-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .footer__social-list-item {
