@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
-
   width: 1100px;
   padding: 92px 24px 92px 24px;
   margin: 0px auto;
@@ -37,8 +36,7 @@
 }
 
 .header-logo {
-  left: 60%;
-  transform: translateX(-60%);
+  margin-right: 164px;
   padding-top: 0px;
   padding-bottom: 4px;
 }
@@ -55,7 +53,7 @@
   border: 1px;
   padding-top: 5px;
   padding-right: 25.48px; /*25...*/
-
+  margin-right: 20px;
   color: #000;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
@@ -73,6 +71,7 @@
 
 .cover {
   background-image: url(../images/cover.jpg);
+  background-position: center;
   width: 1100px;
   position: relative;
   display: flex;
@@ -124,7 +123,6 @@
 .aligned-text-right {
   text-align: right;
   line-height: 100%;
-
   padding-right: 50px;
   color: #fff;
   font-family: "Raleway", "Arial", sans-serif;
@@ -152,7 +150,6 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-
   padding-top: 135px;
   padding-bottom: 50px;
   padding-left: 28px;
@@ -164,14 +161,19 @@
   align-items: center;
   z-index: 2;
   margin: 0;
-
   line-height: 28px;
-  word-spacing: 15px;
+  word-spacing: 23px;
 }
 
 .bet-button {
   display: flex;
-  justify-content: right;
+  color: #fff;
+  text-align: center;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
   background-color: transparent;
   z-index: 2;
   width: 257px;
@@ -217,6 +219,7 @@
 .lots__card-list {
   list-style: none;
   display: flex;
+  gap: 25px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
@@ -227,7 +230,7 @@
 
 .lots__card-list-item {
   max-width: 334px;
-
+  min-height: 563px;
   align-self: stretch;
   background: #eee;
 }
@@ -241,6 +244,8 @@
 
 .card {
   position: relative;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -300,7 +305,7 @@
   font-weight: 400;
   line-height: normal;
   border: 1px;
-  padding-top: 30px;
+  margin-top: 30px;
   padding-left: 40px;
   display: flex;
 }
@@ -332,7 +337,6 @@
 
 .about__logo-image {
   margin-top: 64px;
-
   width: 148px;
   height: 114px;
   fill: #000;
@@ -380,7 +384,6 @@
 }
 
 .footer__menu {
-  max-width: 149px;
   border: 1px;
 }
 
